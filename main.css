@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Droid+Sans+Mono|Francois+One|Sanchez');
+
+html, body, .container-fluid {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.row {
+	/*background-attachment: fixed;*/
+  	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	margin: 0;
+ 	padding: 0;
+ 	z-index: 0;
+}
+
+#bg1 {
+	background-image: url("img/coverPage.jpeg");
+	
+	
+}
+
+#coverPage {
+	padding-top: 22%;
+	padding-bottom: 22%;
+	text-align: center;
+	font-family: Francois One;
+	color: white;
+	
+}
+
+#myName {
+	font-size: 500%;
+}
+
+#mytitle {
+	font-size: 200%;
+}
+
+#learnMore, .glyphicon-menu-down {
+	font-size: 150%;
+}
+
+a { 
+	color: inherit; 
+} 
+
+#categories {
+	padding: 0;
+	text-align: center;
+	font-family: Sanchez;
+	font-size: 300%;
+	background-color: #edeff2;
+	color: #525456;
+}
+
+.col-sm-4 {
+	padding-top: 23%;
+	padding-bottom: 23%;
+}
+
+#portfolioSection:hover, #workSection:hover, #aboutSection:hover {
+	background-color: #525456;
+	color: #edeff2;
+	cursor: pointer;
+}
