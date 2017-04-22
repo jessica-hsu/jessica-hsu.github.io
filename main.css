@@ -6,6 +6,7 @@ html, body, .container-fluid {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: #edeff2;
 }
 
 .row {
@@ -53,18 +54,82 @@ a {
 	padding: 0;
 	text-align: center;
 	font-family: Sanchez;
-	font-size: 300%;
+	font-size: 250%;
 	background-color: #edeff2;
 	color: #525456;
+	height: 100%;
 }
 
 .col-sm-4 {
-	padding-top: 23%;
-	padding-bottom: 23%;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	height: 100%;
+
 }
 
 #portfolioSection:hover, #workSection:hover, #aboutSection:hover {
 	background-color: #525456;
 	color: #edeff2;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 920px) {
+	#coverPage {
+		padding-top: 20%;
+		padding-bottom: 20%;			
+	}
+	
+}
+
+@media screen and (max-width: 784px) {
+	#coverPage {
+		padding-top: 15%;
+		padding-bottom: 15%;			
+	}
+	
+	.col-sm-4 {
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+	
+}
+
+@media screen and (max-width: 738px) {
+	#coverPage {
+		padding-top: 15%;
+		padding-bottom: 15%;			
+	}
+	
+	.col-sm-4 {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	
+}
+
+@media screen and (max-width: 415px) {
+	#coverPage {
+		padding-top: 15%;
+		padding-bottom: 15%;			
+	}
+	
+	.col-sm-4 {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		font-size: 70%;
+	}
+	
+	#myName {
+		font-size: 300%;
+	}
+
+	#mytitle {
+		font-size: 200%;
+	}
+
+	#learnMore, .glyphicon-menu-down {
+		font-size: 100%;
+	}
+	
+	
 }
