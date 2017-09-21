@@ -5,6 +5,13 @@ body {
 	width: 100%;
 	color: #777777;
 	transition: background-color .5s;
+	font-family: "Raleway", sans-serif;
+	font-size: 200%;
+	background-image: url("../img/work-bg.png");
+ 	background-repeat: no-repeat;
+ 	background-size: 100% 100%;;
+ 	background-attachment: fixed;
+ 	z-index: 0;
 	
 }
 
@@ -49,12 +56,53 @@ body {
     padding: 16px;
 }
 
-body {
-	font-family: "Raleway", sans-serif;
-	font-size: 200%;
-}
 
 .page-header {
 	font-family: "Poppins", sans-serif;
 	font-size: 200%;
 }
+
+.row  {
+	text-align: center;
+	margin: 0 10%;
+    background-color: rgba(80, 81, 81, 0.5);
+	color: #d7e5e5;
+ 	
+}
+
+#skillz {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+#jobz {
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	margin-bottom: 50px;
+}
+
+ul {
+	list-style-position: inside;
+	z-index: 2;
+}
+h3 {
+	text-decoration: underline;
+}
+
+img {
+	z-index: 3;
+}
+
+@media screen and (max-width: 900px) {
+	.page-header {
+		font-size: 170%;
+	}
+	
+	img {
+		width: 60px;
+		height: 60pxjn;
+	}
+}
+
+
+

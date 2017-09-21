@@ -22,13 +22,13 @@
 	<div class="container-fluid" id="main">
 		<div id="mySidenav" class="sidenav">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  			<a href="">home</a>
-  			<a href="">about</a>
-  			<a href="">portfolio</a>
-  			<a href="">work</a>
+  			<a href="../index.html">home</a>
+  			<a href="../about/index.html">about</a>
+  			<a href="../portfolio/index.html">portfolio</a>
+  			<a href="index.html">work</a>
 		</div>
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
-		<div class="row">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()" id="hamburger">&#9776; menu</span>
+		<div class="row" id="skillz">
 			<div class="col-sm-12">
 				<div class="page-header">Technical Skills</div>
 				HTML5, CSS3, Bootstrap, Javascript/jQuery, Java, ColdFusion, PHP, SQL, MySQL, MSSQL 
@@ -46,7 +46,7 @@
 				<img src="images/sql.png" title="SQL" width="96" height="96">
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="jobz">
 			<div class="col-sm-12">
 				<div class="page-header">Work Experience</div>
 				<div class="job">
@@ -123,12 +123,14 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    $('#hamburger').hide();
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
+    $('#hamburger').show();
 }
 </script>
 </body>
