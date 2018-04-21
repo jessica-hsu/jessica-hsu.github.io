@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Raleway|IBM+Plex+Serif|Libre+Baskerville');
+
+body {
+	height: 100%;
+	width: 100%;
+	color: #777777;
+	transition: background-color .5s;
+	font-family: "Raleway", sans-serif;
+	font-size: 200%;
+ 	z-index: 0;
+  background-color: rgb(247, 248, 249);
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.page-header {
+  text-align: center;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 250%;
+}
+
+#projects {
+  margin-left: 3%;
+  margin-right: 3%;
+  display: table;
+  width: 94%;
+}
+.sections {
+  display: table-row;
+  width: 100%;
+}
+.tile {
+  text-align: center;
+  background-color: rgb(194, 198, 195);
+  display: table-cell;
+  border: solid rgb(247, 248, 249);
+  width: 33%;
+  padding: 5px;
+  padding-bottom: 10px;
+  font-size: 75%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.tile:hover {
+  background-color: rgb(89, 91, 89);
+  color: rgb(244, 249, 244);
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+	.page-header {
+		font-size: 170%;
+	}
+
+}
+
+@media screen and (max-width: 740px) {
+
+
+}
